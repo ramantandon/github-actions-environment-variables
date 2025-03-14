@@ -25,4 +25,4 @@ jobs:
     - name: Print Name
       run: echo "Hello ${{ env.Name }}"
     - name: Print Name Again
-      run: echo "Hello $NAME"
+      run: echo "Hello $Name"
