@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
 env:
-  Name: 'Snyk Demo'
+  NAME: 'Snyk Demo'
 
 jobs:
   build:
@@ -23,6 +23,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Print Name
-      run: echo "Hello ${{ env.Name }}"
+      run: echo "Hello ${{ env.NAME }}"
     - name: Print Name Again
-      run: echo "Hello $Name"
+      run: echo "Hello $NAME"
