@@ -24,9 +24,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Print Name
-      run: echo "Hello $NAME"
-    - name: Print Name
-      run: echo "Hello $NAME. $BUILD. Using Java Version $JAVA_VERSION"
+      run: echo "Hello $NAME. $BUILD. Using Java Version $JAVA_VERSION". My API_KEY is ${{secrets.API_KEY}}"
       env:
         BUILD: 'We are currently running the Build job'
   
